@@ -1,0 +1,133 @@
+package quiz;
+
+import java.util.Arrays;
+import java.util.Random;
+
+public class MethodQuiz03 {
+	
+	//Quiz 18, 19,20,21
+	public static void main(String[] args) {
+		
+		String str = quiz18(8);
+		System.out.println("자바자바...?: " + str);
+		System.out.println("----------------------------");
+		System.out.println("약수의 합: " + quiz19(10));
+		System.out.println("----------------------------");
+		int num20 = quiz20(10);
+		System.out.println("소수의 개수: " + num20);
+		System.out.println("----------------------------");
+		int num21 = quiz21(7, 9);
+		System.out.println("7~9사이의 수의 합: " + num21);
+		int num211 = quiz21(9, 7);
+		System.out.println("9~7사이의 수의 합: " + num211);
+		System.out.println("----------------------------");
+		System.out.println("quiz22");
+		
+		int[] arr = LottoNum();
+		System.out.println(Arrays.toString(arr));
+		
+			
+	}
+	
+	static String quiz18(int a) {
+		String str = "";
+		
+		for(int i = 1; i <= a; i++) {
+			if(i%2 == 1) {
+				str += "자";
+			}else {
+				str += "바";
+			}
+		}
+		return str;
+	}
+	static int quiz19(int a) {
+		int sum = 0;
+		
+		for(int i = 1; i < a; i++) {
+			sum += i;
+		}
+		
+		return sum;
+	}
+	static int quiz20(int a) {
+		int count;
+		int num = 0;
+		for(int i = 2; i <= a; i++) {
+			count = 0;
+			for(int j = 2; j <= i; j++) {
+				if(i%j == 0) {
+					count++;
+				}
+			}
+			if(count == 1) {
+				num++;
+			}
+		}
+		return num;
+	}
+	static int quiz21(int a, int b) {
+		int sum = 0;
+		if(a > b) {
+			for(int i = b; i <= a; i++) {
+				sum += i;
+			}
+		}else {
+			for(int i = a; i <= b; i++) {
+				sum += i;
+			}	
+		}
+		return sum;
+	}
+	
+	//quiz22
+	static int[] LottoNum() {
+		int[] arr = new int[6];
+		int arrnum = 0;
+		
+		
+		ran:while(true) {
+			if(arrnum == 6) break;
+			
+			int ran = (int)(Math.random()*45) + 1;
+			
+			for(int i = 0; i < 6; i++) {
+				if(arr[i] == ran) {
+					continue ran;
+				}
+			}
+			arr[arrnum] = ran;
+			arrnum++;
+			
+		}
+		return arr;
+	}
+	/////////////////////////////////////////
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

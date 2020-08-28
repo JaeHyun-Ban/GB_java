@@ -1,0 +1,25 @@
+package quiz;
+
+public class MethodQuiz030 {
+	
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+	
+	//Quiz21
+	static int sumNum(int a, int b) {
+		
+		
+		
+		
+		return 0;
+	}
+	
+	
+	
+	
+	
+}

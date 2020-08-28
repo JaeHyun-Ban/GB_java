@@ -30,15 +30,17 @@ public class MethodQuiz02 {
 		System.out.println("=================================");
 		
 		char[] arr = {'a', 'b', 'c'};
-		System.out.println("char배열: " + method06(arr));
+		String result6 = method06(arr);
+		System.out.println("char배열: " + result6);
 		System.out.println("=================================");
 		
-		int[] arr2 = {1,2,3,4,5,6,7,8,9,10};
-		System.out.println("int 배열의 합: " + method07(arr2));
+		int[] arr7 = {1,2,3,4,5,6,7,8,9,10};
+		System.out.println("int 배열의 합: " + method07(arr7));
 		System.out.println("=================================");
 		
-		System.out.println("String 매개변수의 배열: " + Arrays.toString(method08("안녕하세요", "반갑습니다")));
-	
+		String[] arr8 = method08("안녕하세요", "반갑습니다");
+		System.out.println(Arrays.toString(arr8));
+//		System.out.println("String 매개변수의 배열: " + Arrays.toString(method08("안녕하세요", "반갑습니다")));
 		System.out.println("=================================");
 		
 	}
@@ -98,7 +100,7 @@ public class MethodQuiz02 {
 		
 		String str = "";
 		for(int i = 0; i < a.length; i++) {
-			str += i;
+			str += a[i];
 		}
 		
 		return str;
@@ -108,7 +110,7 @@ public class MethodQuiz02 {
 	static int method07(int[] a) {
 		int sum = 0;
 		for(int i = 0; i < a.length; i++) {
-			sum += i;
+			sum += a[i];
 		}
 		return sum;
 	}

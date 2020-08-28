@@ -1,0 +1,27 @@
+package quiz;
+
+public class MethodQuiz030 {
+	
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+	
+	//Quiz21
+	static int sumNum(int a, int b) {
+		
+		if(a == b) return a;
+		
+		for(int i = (a > b ? b : a); i <= (a > b ? a : b); i++)
+		
+		
+		return 0;
+	}
+	
+	
+	
+	
+	
+}
