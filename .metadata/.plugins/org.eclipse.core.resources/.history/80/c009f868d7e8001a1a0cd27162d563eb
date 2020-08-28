@@ -1,0 +1,68 @@
+package day07;
+
+public class MethodEx03 {
+
+	
+	public static void main(String[] args) {
+		
+		/*
+		 * 반환유형(return type)
+		 * 1. 반환유형은 메서드가 실행한 결과를 돌려주는 값에 대한 type입니다.
+		 * 
+		 * 
+		 */
+		
+		
+//		int result = add(3, 5);
+		int result = add(add(1,2), add(2,3));
+		System.out.println("결과: " + result);
+		System.out.println( add(1,2));//반환유형이 존재하면 출력에 바로 사용할 수 있다.
+		
+		
+	}
+	
+	
+	static int add(int a, int b) {
+		return a + b;
+		
+	}
+	
+	void sub(int a, int b) {//반환 유형이 없는 메서드
+		System.out.println(a + "-" + b + "=" + (a-b));
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

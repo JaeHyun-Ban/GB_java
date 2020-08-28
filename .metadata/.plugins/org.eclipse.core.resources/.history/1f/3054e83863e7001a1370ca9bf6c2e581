@@ -1,0 +1,29 @@
+package day05;
+
+public class BreakEx03 {
+	
+	public static void main(String[] args) {
+		
+		boolean flag = false;
+		
+		for(char u = 'A'; u <= 'Z'; u++) {
+			
+			for(char l = 'a'; l <= 'z'; l++) {
+				System.out.println(u + "-" + l);
+				
+				if(l == 'c') {	//c까지만 돌고 빠져나오기
+					System.out.println();
+					flag = true;
+				}
+				
+			}//내부 for
+			if(flag) break;	//true일 경우에 빠져나간다.
+			
+		}//외부 for
+		
+		
+		
+		
+		
+	}
+}

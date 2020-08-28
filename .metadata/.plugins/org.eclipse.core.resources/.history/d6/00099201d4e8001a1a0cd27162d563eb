@@ -1,0 +1,29 @@
+package day07;
+
+public class MethodEx02 {
+	public static void main(String[] args) {
+		
+		/*
+		 * 매개변수(Parameter)
+		 * 1. 매개변수는 메서드를 호출할 때, 실행에 필요한 값을 전달하는 매개체 입니다.
+		 * 
+		 */
+		
+		
+		
+		
+		
+	}
+	
+	int calSum() {
+		int sum = 0;
+		for(int i = 1; i <= 10; i++) {
+			sum+=i;
+		}
+		
+		return sum;
+	}
+	
+	
+	
+}

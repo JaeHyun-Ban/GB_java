@@ -1,0 +1,46 @@
+package quiz;
+
+import java.util.Scanner;
+
+public class Quiz29 {
+	
+	//Quiz14
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("정수를 입력하세요: ");
+		int num = sc.nextInt();
+		
+		int sum = 0;
+		int count = 0; 
+		//소수들의 합
+		for(int i = 2; i <= num; i++) {
+			
+			for(int j = 2; j <= num; j++ ) {
+				if(i%j == 0) {
+					count++;
+				}
+			}
+			if(count == 1) {
+				sum += i;
+			}
+		}
+		System.out.println(sum);
+		//	2 2
+		//	3 2
+		//	  3
+		
+		
+		
+		
+		
+		
+	}//main
+}
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+package quiz;
+
+public class MethodQuiz02 {
+	
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		
+	}
+	
+	static void method01() {
+		System.out.println("안녕");
+	}
+	//전달 받은 매개 변수 리턴
+	static String method02(String a) {
+		String str = a;
+		System.out.println("전달받은 매개변수: " + str);
+		
+		return str;
+	}
+	
+	//세 매개변수 합 리턴
+	static double method03(int a, int b, double c) {	
+		double add = a + b + c;
+		
+		return add;	
+	}
+	//매개 변수가 짝수면 "짝수", 홀수라면 "홀수"리턴
+	static String method04(int a) {
+		String str = "";
+		if(a%2 == 0) {
+			str = "짝수";
+		}else {
+			str = "홀수";
+		}
+		return str;
+	}
+	
+	//매개변수 int만큼  String 반복출력
+	static void method05(int a) {
+		for(int i = 0; i <= a; i++) {
+			System.out.println("반복" + i + " ");
+		}
+	}
+	
+	//매개변수 2개를 입력받아 큰 수 리턴
+	static int maxNum(int a, int b) {
+		int num1 = a;
+		int num2 = b;
+		if(num1 > num2) {
+			return num1
+		}else {
+			return num2
+		}
+		
+	}
+	
+	//절대값 리턴
+	static void abs() {
+		
+		
+	}
+	static void method06() {
+		
+	}
+	static void method07() {
+		
+	}
+	static void method08() {
+		
+	}
+	
+	
+	
+	
+}

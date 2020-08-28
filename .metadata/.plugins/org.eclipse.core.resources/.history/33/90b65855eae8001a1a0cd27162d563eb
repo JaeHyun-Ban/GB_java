@@ -1,0 +1,64 @@
+package quiz;
+
+public class MethodQuiz02 {
+	
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		
+	}
+	
+	static void method01() {
+		System.out.println("안녕");
+	}
+	//전달 받은 매개 변수 리턴
+	static String method02(String a) {
+		
+		String str = a;
+		
+		System.out.println("전달받은 매개변수: " + str);
+		
+		return str;
+	}
+	
+	//세 매개변수 합 리턴
+	static double method03(int a, int b, double c) {
+		
+		double add = a + b + c;
+		
+		return add;
+		
+	}
+	static void method04() {
+		
+	}
+	static void method05() {
+		
+	}
+	static void maxNum() {
+		
+		
+	}
+	
+	//절대값 리턴
+	static void abs() {
+		
+		
+	}
+	static void method06() {
+		
+	}
+	static void method07() {
+		
+	}
+	static void method08() {
+		
+	}
+	
+	
+	
+	
+}

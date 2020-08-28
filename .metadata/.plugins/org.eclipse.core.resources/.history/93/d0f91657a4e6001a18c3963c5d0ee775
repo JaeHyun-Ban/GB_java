@@ -1,0 +1,66 @@
+package quiz;
+
+public class Quiz25 {
+	
+	//숙제
+	public static void main(String[] args) {
+		
+		int x = 1;
+		int y = 5;
+		
+		void swap(int a, int b){
+			int tmp = a;
+			b = a;
+			a = tmp; 
+		}	
+		swap(x, y);
+		
+		System.out.println();
+		
+		
+	
+		
+		
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

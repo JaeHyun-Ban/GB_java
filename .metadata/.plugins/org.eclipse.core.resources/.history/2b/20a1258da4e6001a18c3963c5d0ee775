@@ -1,0 +1,68 @@
+package quiz;
+
+public class Quiz25 {
+	
+	//숙제
+	public static void main(String[] args) {
+		
+		int x = 1;
+		int y = 5;
+		
+		/*
+		//swap
+		int tmp = x;
+		x = y;
+		y = tmp;
+		
+		System.out.println("x의 값: " + x + ", y의 값: " + y);
+		*/
+		
+		
+		
+		
+	
+		
+		
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+package quiz;
+
+import java.util.Scanner;
+
+public class Quiz33 {
+	
+	//Quiz15번
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int ran1 = (int)(Math.random()*100)+1;
+		int ran2 = (int)(Math.random()*100)+1;
+		
+		int clear = 0;
+		int fail = 0;
+		
+		quiz:while(true) {
+			
+			System.out.printf("%d + %d = ?\n",ran1, ran2);
+			System.out.println("문제를 그만 푸시려면 0을 입력하세요!");
+			System.out.print("> ");
+			int num = sc.nextInt();
+			
+			if(num == 0) {
+				System.out.println("프로그램을 종료합니다!");
+				break quiz;
+			} else if(num == ran1*ran2) {
+				System.out.println("정답입니다!!!");
+				clear++;
+			}else {
+				System.out.println("틀렸는데요!?!?");
+				fail++;
+			}
+			
+		}
+		
+		
+		
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

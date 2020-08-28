@@ -1,0 +1,29 @@
+package quiz;
+
+import java.util.Arrays;
+
+public class Quiz31 {
+	
+	public static void main(String[] args) {
+		
+		//자료구조 - 버블정렬(buble sort)
+		int[] arr = {5,23,1,43,100,200,40};
+		
+		
+		for(int i = 0; i < arr.length-1; i++) {
+
+			for(int j = 0; j < i; j++) {
+				if(arr[i] > arr[j]) {
+					int tmp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = tmp;
+				}
+			}
+
+			
+		}
+	
+		System.out.println(Arrays.toString(arr));
+	}
+	
+}

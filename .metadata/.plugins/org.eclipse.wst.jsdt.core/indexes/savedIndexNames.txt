@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+D:\course\java\eclipse-jee-2020-06-R-win32-x86_64\workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1366634784.index
+3509822438.index
+128519068.index
+1727406382.index
+1871031988.index
+367735287.index
+386864684.index

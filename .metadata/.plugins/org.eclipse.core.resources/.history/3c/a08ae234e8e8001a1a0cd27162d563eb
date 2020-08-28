@@ -1,0 +1,18 @@
+package day07;
+
+public class MethodEx04 {
+	public static void main(String[] args) {
+		
+		//메서드의 매개변수, 반환유형으로 배열을 전달하는 방법.
+		
+		
+		
+		
+	}
+	
+	
+	//매개변수로 배열을 받는메서드
+	void method01() {
+		
+	}
+}

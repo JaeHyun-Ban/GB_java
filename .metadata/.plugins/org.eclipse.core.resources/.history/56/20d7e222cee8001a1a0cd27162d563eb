@@ -1,0 +1,30 @@
+package day07;
+
+public class MethodEx01 {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * 메서드는 메서드 내부에 선언할 수 없습니다.
+		 * main밖에, 클래스 안 어디서든 선언할 수 있습니다.
+		 * 
+		 */
+		
+		
+		
+		calSum();
+			
+		
+	} //main
+	
+	int calSum(int a) {
+		
+		int sum = 0;
+		for(int i = 1; i < 11; i++) {
+			sum += i;
+		}
+		
+		return sum;
+	}
+	
+}
