@@ -8385,3 +8385,219 @@ Java Model Exception: Java Model Status [orange.java [in fruit [in src [in day08
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
 !SUBENTRY 1 org.eclipse.jdt.core 4 969 2020-09-14 17:12:53.632
 !MESSAGE orange.java [in fruit [in src [in day08(2020_09_14)]]] does not exist
+!SESSION 2020-09-15 09:44:39.737 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=1.8.0_261
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2020-09-15 09:44:54.522
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-09-15 09:44:54.522
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-09-15 09:44:54.522
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot.wizard', id='org.springframework.ide.eclipse.boot.wizard.addStarersSwitchHandler', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2020-09-15 09:44:54.563
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-09-15 09:44:54.563
+!MESSAGE Defining a key binding with no key sequence has no effect: plug-in='org.springframework.ide.eclipse.boot.wizard', id='org.springframework.ide.eclipse.boot.wizard.addStarersSwitchHandler'
+
+!ENTRY org.eclipse.ui 2 0 2020-09-15 09:44:54.782
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-09-15 09:44:54.782
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-09-15 09:44:54.782
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot.wizard', id='org.springframework.ide.eclipse.boot.wizard.addStarersSwitchHandler', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.jface 2 0 2020-09-15 09:44:55.973
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-09-15 09:44:55.973
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@714a4ba2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6ddc817f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-09-15 09:45:04.450
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\1104-08'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 09:45:11.662
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 09:45:11.662
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 09:45:11.678
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 09:45:11.678
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 09:45:11.678
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 09:45:11.693
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 09:45:11.693
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 09:45:11.693
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 09:45:13.613
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 09:45:14.678
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 09:45:14.678
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 09:45:15.823
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 09:46:24.465
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 09:46:54.755
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 09:47:56.448
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 10:48:04.002
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 10:51:23.228
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 11:10:50.130
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 11:22:59.372
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 11:23:18.167
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 13:09:26.872
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 13:16:32.765
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 13:16:42.350
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 14:10:26.220
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 14:10:28.278
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 14:13:34.211
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 14:13:36.238
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 14:13:37.359
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 14:14:20.651
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 14:19:19.651
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 14:29:44.419
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 14:30:04.243
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 14:44:53.561
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 14:45:02.057
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 14:45:10.779
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 14:45:19.345
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 14:46:33.597
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 14:51:01.224
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 14:51:07.182
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 14:51:23.725
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 14:51:51.245
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 14:51:55.613
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 14:52:00.164
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 14:52:32.432
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 14:52:39.529
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 14:53:34.489
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 15:35:00.065
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 15:35:16.526
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 15:45:57.080
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 15:46:00.346
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 16:44:22.959
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 16:50:39.433
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 17:01:50.963
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-09-15 17:51:57.033
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
