@@ -1,5 +1,7 @@
 package quiz10;
 
+import java.util.Arrays;
+
 public class MyCart extends Cart{
 	
 	MyCart(int money){
@@ -20,7 +22,7 @@ public class MyCart extends Cart{
 	/*
 	 * buy()의 기능
 	 * 1. money가 300보다 작으면 "금액부족" 출력후 메서드를 종료.
-	 *    매개변수가 tv, com, radio가 아니더라도 "상품없음" 출력 후 종료
+	 *    매개변수가 tv, com, radio가 아니더라도(아니라면) "상품없음" 출력 후 종료
 	 * 2. 매개변수 tv라면 금액에서 tv가격을 빼고 add(상품)을 호출
 	 *    매개변수 com라면 금액에서 com가격을 빼고 add(상품)를 호출
 	 *    매개변수 radio라면 금액에서 radio를 빼고 add(상품)을 호출
@@ -28,17 +30,18 @@ public class MyCart extends Cart{
 	@Override
 	void buy(String product) {
 		
-		if(money < 300) {
+		if(this.money < 300) {
 			System.out.println("금액이 부족합니다!");
+			return; //리턴을 이용해 여기서 끝내준다.
 		}else if(product.equals("tv")) {
 			money -= tv;
-//			add("tv");
+			add("tv");
 		}else if(product.equals("com")) {
 			money -= com;
-//			add("com");
+			add("com");
 		}else if(product.equals("radio")) {
 			money -= radio;
-//			add("radio");
+			add("radio");
 		}else {
 			System.out.println("상품이 존재하지 않습니다!");
 		}
@@ -57,18 +60,25 @@ public class MyCart extends Cart{
 	@Override
 	void add(String product) {
 		
+		//카트 꽉찼을 때
 		if(i >= cart.length) {
-			
 			String[] tmp = new String[cart.length*2];
-			for(int i = 0; i < cart.length; i++) {
-				tmp[i] = cart[i];
-				cart = tmp;
+			//null제거
+			for(int i = 0; i < tmp.length; i++) {
+				if(tmp[i] == null) {
+					tmp[i] = "";
+				}
 			}
 			
-			cart[i] += product;
-			i++;
+			for(int i = 0; i < cart.length; i++) {
+				tmp[i] = cart[i];
+			}
+			cart = tmp; //2배된 배열 넣엊기
 		}
 		
+		cart[i] = product;
+		i++;
+		System.out.println(Arrays.toString(cart));
 		info();
 	}
 	
@@ -83,19 +93,18 @@ public class MyCart extends Cart{
 	void info() {
 		
 		int sum = 0;
-		for(i = 0; i < cart.length; i++) {
+		for(int i = 0; i < cart.length; i++) {
 			if(cart[i].equals("tv")) {
 				sum += 300;
-				buy("tv");
 			}else if(cart[i].equals("com")) {
 				sum += 400;
-				buy("com");
 			}else if(cart[i].equals("radio")) {
 				sum += 500;
-				buy("radio");
 			}
 		}
-		System.out.println("장바구니의 총 금액: " + sum);	
+		System.out.println("장바구니의 총 금액: " + sum);
+		System.out.println("남은 금액: " + money);
+		System.out.println("----------------------");
 	}
 	
 	

@@ -10,12 +10,12 @@ public class SuperSonicAp extends Airplane{
 	 *          flyMode 0이라면, super를 통해 부모님의 메서드를 호출
 	 */
 	
-	//2)
-	int flyMode = 1;
-	
+	int flyMode;
+
 	//1)
 	SuperSonicAp(String name) {
 		super(name);
+		this.flyMode = 0;
 	}
 	
 	

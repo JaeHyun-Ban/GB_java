@@ -15,11 +15,14 @@ public class Car {
 		2. 멤버변수 speed가 150 이상이라면 "속도를 올릴 수 없습니다" 를 출력
 		그렇지 않으면 멤버변수를 매개변수로 변경하세요
 		*/
-		if(speed >= 150) {
-			System.out.println("속도를 올릴 수 없습니다.");
-		}
 		this.speed = speed;
-	}
+		if(this.speed >= 150) {
+			System.out.println("속도를 올릴 수 없습니다.");
+		}else {
+			System.out.println(this.speed);
+		}
+		
+	}	
 	
 	
 
@@ -29,10 +32,10 @@ public class Car {
 		for문안에서 accel()를 호출하세요
 		멤버변수 speed도 출력하세요
 		*/
-		for(int i = 0; i < 201; i+=30) {
+		for(int i = 0; i <= 200; i+=30) {
 			this.accel(i);
-			System.out.println(speed);
 		}
+		
 		
 	}
 }
