@@ -1,23 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="quiz02.Ex00"/>
-<fullyQualifiedTypeName name="fruit.apple"/>
-<fullyQualifiedTypeName name="fruit.Orange"/>
-<fullyQualifiedTypeName name="com.abc.ABC"/>
-<fullyQualifiedTypeName name="com.def.DEF"/>
-<fullyQualifiedTypeName name="inherit.good.Person"/>
-<fullyQualifiedTypeName name="inherit.good.Student"/>
-<fullyQualifiedTypeName name="inherit.good.Teacher"/>
-<fullyQualifiedTypeName name="quiz04.Champion"/>
-<fullyQualifiedTypeName name="quiz04.Player"/>
-<fullyQualifiedTypeName name="quiz04.Warrior"/>
-<fullyQualifiedTypeName name="quiz04.Wizard"/>
-<fullyQualifiedTypeName name="quiz05.DmbPhone"/>
-<fullyQualifiedTypeName name="quiz05.Phone"/>
-<fullyQualifiedTypeName name="OverridingBasic.Child"/>
-<fullyQualifiedTypeName name="OverridingBasic.Parent"/>
-<fullyQualifiedTypeName name="Overloading.basic.Basic"/>
-<fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="quiz06.Computer"/>
 <fullyQualifiedTypeName name="quiz06.Calculator"/>
 <fullyQualifiedTypeName name="quiz07.ArrayPrint"/>
@@ -42,7 +24,6 @@
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="quiz11.User"/>
 <fullyQualifiedTypeName name="encap.obj.Employee"/>
 <fullyQualifiedTypeName name="encap.obj.Hotel"/>
@@ -60,4 +41,23 @@
 <fullyQualifiedTypeName name="poly.basic3.Student"/>
 <fullyQualifiedTypeName name="poly.basic3.Teacher"/>
 <fullyQualifiedTypeName name="poly.basic3.Employee"/>
+<fullyQualifiedTypeName name="static_field.Count"/>
+<fullyQualifiedTypeName name="static_.method.Count"/>
+<fullyQualifiedTypeName name="static_.method.MainClass"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="static_.Basic.Calculator"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="static_.basic.ArrayPrint"/>
+<fullyQualifiedTypeName name="static_.basic.Calculator"/>
+<fullyQualifiedTypeName name="static_.init.Computer"/>
+<fullyQualifiedTypeName name="java.awt.image.SinglePixelPackedSampleModel"/>
+<fullyQualifiedTypeName name="static_.singleton.Singleton"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
+<fullyQualifiedTypeName name="quiz15.Unit"/>
+<fullyQualifiedTypeName name="quiz15.tank"/>
+<fullyQualifiedTypeName name="quiz15.DropShip"/>
+<fullyQualifiedTypeName name="quiz15.engin"/>
+<fullyQualifiedTypeName name="quiz15.Marine"/>
 </qualifiedTypeNameHistroy>
