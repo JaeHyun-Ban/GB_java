@@ -1,7 +1,5 @@
 package quiz10;
 
-import java.util.Arrays;
-
 public class MyCart00 extends Cart{
 	
 	MyCart00(int money){

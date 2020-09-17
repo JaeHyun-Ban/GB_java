@@ -28,29 +28,18 @@ public class House {
 	 * 1. 300개 크기의 Person배열 생성
 	 * 2. count변수 선언
 	 * 3. setIn() 모든 자식클래스를 받아서 Person배열에 저장되도록 선언
-	 * 4. 메인클래스에서 6명의 Person을 전달
+	 * 4. 메인클래스에서 6명의 Person을 전달 -> hong, park....
 	 */
 	
-	private Person[] p;
-	private Person[] students;
-	private Person[] teachers;
-	private Person[] employees;
-	
+	private Person[] persons = new Person[300]; //1
 	private int count = 0; //2
 	
-	public House() {
-		p = new Person[300]; //1
-		students = new Student[300];
-		teachers = new Teacher[300];
-		employees = new Employee[300];
-		
-	}
 	
 	//3
-	public void setIn(Student s, Teacher t, Employee e) {
-		
-		
-		
+	public void setIn(Person p) {
+		persons[count] = p;
+		count++;
+		System.out.println(persons);		
 	}
 	
 	
