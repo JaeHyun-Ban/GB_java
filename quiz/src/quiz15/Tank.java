@@ -24,7 +24,8 @@ public class Tank extends Unit {
 		int preY = y - getY();
 		setX(preX);
 		setY(preY);
-		System.out.println("탱크이동 거리: " + (int)(Math.sqrt(getX()^2 + getY()^2)));
+		System.out.println("탱크이동 거리: " 
+		+ (int)(Math.sqrt((int)Math.pow(getX(), 2) + (int)Math.pow(getY(), 2))));
 	}
 
 

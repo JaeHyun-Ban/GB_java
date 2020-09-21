@@ -73,7 +73,8 @@ public class DropShip extends Unit{
 		setX(preX);
 		setY(preY);
 		System.out.println("-----------------------------------");
-		System.out.println("드랍쉽이동 거리: " + (int)(Math.sqrt(getX()^2 + getY()^2)));
+		System.out.println("드랍쉽이동 거리: " 
+					+ (int)(Math.sqrt((int)Math.pow(getX(), 2) + (int)Math.pow(getY(), 2))));
 		
 		//단, 수송선이 이동하면, 수송선 배열에 있는 모든 유닛의 위치가 수송선 위치로 바뀐다.
 		for(int i = 0; i < index; i++) {
