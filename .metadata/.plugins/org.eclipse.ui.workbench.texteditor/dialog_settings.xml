@@ -8,6 +8,7 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value="monitor"/>
 		<list key="findhistory">
+			<item value="`"/>
 			<item value="moni"/>
 			<item value="ms"/>
 			<item value="mn"/>
