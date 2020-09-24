@@ -4,6 +4,10 @@ public class Person implements Cloneable{
 	
 	private String name;
 	
+	public Person() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public Person(String name) {
 		this.name = name;
 	}

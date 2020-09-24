@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="monitor"/>
+		<item key="selection" value="nextDouble"/>
 		<list key="findhistory">
+			<item value="nextdouble"/>
 			<item value="`"/>
 			<item value="moni"/>
 			<item value="ms"/>
