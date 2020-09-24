@@ -7,6 +7,7 @@ public class Point implements InterPoint {
 
 //	List<Student> list = new ArrayList<>(); >> ????
 	private Scanner sc = new Scanner(System.in);
+	Student s = new Student();
 	
 	@Override
 	public void showPointUI() {
@@ -29,17 +30,17 @@ public class Point implements InterPoint {
 		4. 저장완료 메세지를 출력하세요.
 		ex) XXX님의 성적 정보가 정상적으로 입력되었습니다.
 		*/
+			
+		String stdId = s.inputStuInfo(); //입력
 		
-		//1.
-		Student s = new Student();
-		
-		s.inputStuInfo(); //입력 시작
-		if(s.getStuId().contains(s.inputStuInfo())) { //반환값이 존재한다면
+		if(s.getStuId().contains(stdId)) { //반환값이 존재한다면
 			System.out.println("이미 등록된 학번입니다.");
 		}else {
 			students.add(s);
 			System.out.println(s.getName() + "님의 정보가 저장 되었습니다.");
 		}
+		
+		 
 		
 	}
 
@@ -50,13 +51,17 @@ public class Point implements InterPoint {
 		1. 리스트 안에 들어있는 학생객체들의 정보를 반복문을 통해 전체 출력하세요.
 		2. 우리반의 전체평균을 가장 아랫부분에 출력하세요.
 	 	*/
+		s.calcTotAvg(); //총점, 평균, 학점 계산
+		
 		double totalAvg = 0;
 		
+		showPointUI();//리스트
+		
 		for(int i = 0; i < students.size(); i++	) {
-			System.out.println(students.get(i).toString());
+			students.get(i).outputInfo();
 			totalAvg += students.get(i).getAvg();
 		}
-		System.out.printf("전체 평균 : %.2f" + totalAvg / students.size());
+		System.out.printf("전체 평균 : %.2f", totalAvg / students.size());
 		
 	}
 
@@ -68,8 +73,21 @@ public class Point implements InterPoint {
 		2. 찾는 학번이 없을시 검색하지 못했다는 메시지를 출력하세요.
 		*/
 		System.out.print("학번 입력: ");
-		int stdId = sc.nextInt();
+		String stdId = sc.next();
 		
+		boolean flag = false;
+		
+		for(int i = 0; i < students.size(); i++) {
+			if(students.get(i).getStuId() == stdId) {
+				System.out.println(students.get(i).toString());
+				flag = false;
+				break;
+			}else flag = true;
+			
+		}
+		if(flag == true) {
+			System.out.println("존재하지 않는 학생 입니다.");
+		}
 		
 		
 	}
@@ -81,7 +99,30 @@ public class Point implements InterPoint {
 		1. 해당 학번과 일치하는 학생객체를 리스트에서 찾아내서 그 학생의 국어,영어,수학 점수를 수정하세요.
 		2. 찾는 학번이 없을시 검색하지 못했다는 메시지를 출력 하세요.
 		*/
+		System.out.println("수정하고 싶은 학번 입력");
+		System.out.print("> ");
+		String stdId = sc.next();
 		
+		boolean flag = false; //조회 판단
+		
+		for(int i = 0; i < students.size(); i++) { //학번 조회
+			if(students.get(i).getStuId() == stdId) { //학번 발견
+				//점수 수정
+				System.out.print("국어: ");
+				students.get(i).setKor(sc.nextInt());
+				System.out.print("영어: ");
+				students.get(i).setEng(sc.nextInt());
+				System.out.println();
+				System.out.print("수학: ");
+				students.get(i).setMath(sc.nextInt());
+				flag = false;
+				break;
+			}else flag = true;
+		}
+		
+		if(flag = true) { //
+			System.out.println("해당 학번을 검색하지 못하였습니다.");
+		}
 	}
 
 	@Override
@@ -91,6 +132,23 @@ public class Point implements InterPoint {
 		1. 해당 학번과 일치하는 학생객체를 리스트에서 찾아내서 그 학생의 모든 정보를 삭제하세요.
 		2. 찾는 학번이 없을시 검색하지 못했다는 메시지를 출력 하세요.
 		*/
+		System.out.println("삭제하고 싶은 학번 입력");
+		System.out.print("> ");
+		String stdId = sc.next();
+		
+		boolean flag = false; //조회 판단
+		
+		for(int i = 0; i < students.size(); i++) { //학번 검색
+			if(students.get(i).getStuId() == stdId) {//학번 발견
+				System.out.println(stdId + "번 정보가 삭제 되었습니다.");
+				students.remove(i);
+				flag = false;
+				break;
+			}else flag = true;
+		}
+		if(flag == true) {
+			System.out.println("존재하지 않는 학번입니다");
+		}
 		
 	}
 

@@ -55,7 +55,7 @@ public class Student {
 		setTotal(total);
 		
 		//평균
-		double avg = (double)total / 3.0;
+		double avg = total / 3.0;
 		setAvg(avg);
 		
 		//학점
