@@ -1,13 +1,14 @@
 package quiz22;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Point implements InterPoint {
 
-//	List<Student> list = new ArrayList<>(); >> ????
+	List<Student> list = new ArrayList<>();
 	private Scanner sc = new Scanner(System.in);
-	Student s = new Student();
+	
 	
 	@Override
 	public void showPointUI() {
@@ -30,18 +31,25 @@ public class Point implements InterPoint {
 		4. 저장완료 메세지를 출력하세요.
 		ex) XXX님의 성적 정보가 정상적으로 입력되었습니다.
 		*/
-			
+		Student s = new Student();
+		//> 메서드 밖에 생성하면 주소값이 같은 객체를 생성하기 때문에 중복되서 즐어가진다
 		String stdId = s.inputStuInfo(); //입력
 		
-		if(s.getStuId().contains(stdId)) { //반환값이 존재한다면
-			System.out.println("이미 등록된 학번입니다.");
+		if(students.size() == 0) { //최초 저장
+			students.add(s);
+			System.out.println(s.getName() + "님의 정보가 저장 되었습니다.");
 		}else {
+			for(int i = 0; i < students.size(); i++) {
+				if(students.get(i).getStuId().equals(stdId)) {
+					System.out.println("이미 등록된 학번입니다.");
+				}
+			}
 			students.add(s);
 			System.out.println(s.getName() + "님의 정보가 저장 되었습니다.");
 		}
 		
-		 
 		
+
 	}
 
 	@Override
@@ -51,8 +59,6 @@ public class Point implements InterPoint {
 		1. 리스트 안에 들어있는 학생객체들의 정보를 반복문을 통해 전체 출력하세요.
 		2. 우리반의 전체평균을 가장 아랫부분에 출력하세요.
 	 	*/
-		s.calcTotAvg(); //총점, 평균, 학점 계산
-		
 		double totalAvg = 0;
 		
 		showPointUI();//리스트
@@ -78,8 +84,9 @@ public class Point implements InterPoint {
 		boolean flag = false;
 		
 		for(int i = 0; i < students.size(); i++) {
-			if(students.get(i).getStuId() == stdId) {
-				System.out.println(students.get(i).toString());
+			if(students.get(i).getStuId().contains(stdId)) {
+				showPointUI();//리스트
+				students.get(i).outputInfo();
 				flag = false;
 				break;
 			}else flag = true;
@@ -106,21 +113,23 @@ public class Point implements InterPoint {
 		boolean flag = false; //조회 판단
 		
 		for(int i = 0; i < students.size(); i++) { //학번 조회
-			if(students.get(i).getStuId() == stdId) { //학번 발견
+			if(students.get(i).getStuId().contains(stdId)) { //학번 발견
 				//점수 수정
 				System.out.print("국어: ");
 				students.get(i).setKor(sc.nextInt());
 				System.out.print("영어: ");
 				students.get(i).setEng(sc.nextInt());
-				System.out.println();
 				System.out.print("수학: ");
 				students.get(i).setMath(sc.nextInt());
 				flag = false;
+//				return;
 				break;
+				//>return - 쓰여진 메서드에서 탈출
+				//>break - 하나의 반복문을 벗어남
 			}else flag = true;
 		}
 		
-		if(flag = true) { //
+		if(flag == true) { //
 			System.out.println("해당 학번을 검색하지 못하였습니다.");
 		}
 	}
@@ -137,15 +146,15 @@ public class Point implements InterPoint {
 		String stdId = sc.next();
 		
 		boolean flag = false; //조회 판단
-		
-		for(int i = 0; i < students.size(); i++) { //학번 검색
-			if(students.get(i).getStuId() == stdId) {//학번 발견
+			for(int i = 0; i < students.size(); i++) { //학번 검색
+			if(students.get(i).getStuId().contains(stdId)) {//학번 발견
 				System.out.println(stdId + "번 정보가 삭제 되었습니다.");
 				students.remove(i);
 				flag = false;
 				break;
 			}else flag = true;
 		}
+	
 		if(flag == true) {
 			System.out.println("존재하지 않는 학번입니다");
 		}

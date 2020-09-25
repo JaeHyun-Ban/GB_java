@@ -8,8 +8,7 @@ public class MainClass {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		List<Student> students = new ArrayList<>();
-		Student s = new Student();
+		List<Student> students = new ArrayList<>();	
 		Point p = new Point();
 		
 		/*
@@ -29,7 +28,6 @@ public class MainClass {
 			
 			if(num == 1) {
 				p.input(students);
-				System.out.println();
 			}else if(num == 2) {
 				p.showAll(students);
 				System.out.println();

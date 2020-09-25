@@ -10,9 +10,7 @@ public class ArrayListQuiz03 {
 		
 		Scanner sc = new Scanner(System.in);
 		List<User> list = new ArrayList<>();
-		
-		
-		
+			
 		while(true) {
 			
 			System.out.println("[1.등록 | 2.회원정보확인 | 3.회원정보검색 | 4.회원정보삭제 | 5.종료 ]");
@@ -35,18 +33,27 @@ public class ArrayListQuiz03 {
 					System.out.println("이름: " + list.get(i).getName()
 									+ ", 나이: " + list.get(i).getAge());
 				}
+				//향상 for문
+//				for(User u : list) {
+//					System.out.println("----------------");
+//					System.out.println("이름: " + u.getName() + ", 나이: " + u.getAge());
+//				}
 				
 			} else if(menu == 3) {
 				//찾을 이름을 입력받고, 이름이 있다면 이름, 나이를 출력
 				//찾는 이름이 없다면 ~~~님은 목록에 없습니다 를 출력
-				System.out.print("이름 입력: ");
+				System.out.print("검색할 이름: ");
 				String name = sc.next();
 				
-				int count = 1; //검색 카운트
-
+				int count = 1; //검색 카운트, 탈출 조건
+				
 				for(int i = 0; i < list.size(); i++) {
-					
-					if(list.get(i).getName().contains(name)) { //이름이 있다면
+					//이렇게도 가능함
+//					User user = list.get(i);
+//					if(user.getName().equals(name)) {
+//						...
+//					}
+					if(list.get(i).getName().equals(name)) { //이름이 포함되어있다면
 						System.out.println("이름: " + list.get(i).getName()
 								+ ", 나이: " + list.get(i).getAge());
 						count--;
@@ -62,12 +69,11 @@ public class ArrayListQuiz03 {
 				System.out.print("이름 입력: ");
 				String name = sc.next();
 				for(int i = 0; i < list.size(); i++) {
-					if(list.get(i).getName().contains(name)) {
+					if(list.get(i).getName().equals(name)) {
 						System.out.println(list.get(i).getName() + "의 정보를 삭제했습니다");
 						list.remove(i);
 					}
 				}
-				
 				
 			} else if(menu == 5) {
 				//종료

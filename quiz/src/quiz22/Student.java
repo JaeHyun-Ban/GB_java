@@ -28,21 +28,25 @@ public class Student {
 		System.out.print("이름: ");
 		setName(sc.next());
 		
-		try {
-			System.out.print("국어: ");
-			setKor(sc.nextInt());
-			System.out.print("영어: ");
-			setEng(sc.nextInt());
-			System.out.print("수학: ");
-			setMath(sc.nextInt());
-		
-			//예외처리
-		} catch (InputMismatchException e) {
-			System.out.println("숫자만 입력해 주세요");
-		}catch (Exception e) {
-			System.out.println("1~100사이의 숫자만 입력하세요");
+		while(true) {
+			try {
+				System.out.print("국어: ");
+				setKor(sc.nextInt());
+				System.out.print("영어: ");
+				setEng(sc.nextInt());
+				System.out.print("수학: ");
+				setMath(sc.nextInt());
+				break;
+				//예외처리
+			} catch (InputMismatchException e) {
+				sc.nextLine();
+				System.out.println("숫자만 입력해 주세요");
+			}catch (Exception e) {
+				sc.nextLine();
+				System.out.println("1~100사이의 숫자만 입력하세요");
+			}
 		}
-		
+		calcTotAvg();
 		return stuId;
 	}
 	
