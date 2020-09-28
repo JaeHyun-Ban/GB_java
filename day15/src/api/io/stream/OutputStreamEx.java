@@ -10,7 +10,7 @@ public class OutputStreamEx {
 	public static void main(String[] args) {
 		
 		/*
-		 * 1. FileOutputStream은 파일을 쓸 때 사용하는 클래스 입니다.
+		 * 1. FileOutputStream은 '파일을 쓸 때' 사용하는 클래스 입니다.
 		 * 2. 생성자 매개값으로 파일을 쓸 전체 경로를 지정한다.
 		 */
 		

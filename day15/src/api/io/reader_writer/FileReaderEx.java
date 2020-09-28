@@ -7,7 +7,8 @@ public class FileReaderEx {
 	public static void main(String[] args) {
 
 		/*
-		 * 문자기반으로 읽어들이는 클래스는 FileReader클래스 입니다. 2byte 단위로 읽고쓰기 대문에 문자를 쓰기에 적합하다.
+		 * 문자기반으로 읽어들이는 클래스는 FileReader클래스 입니다. 
+		 * 2byte 단위로 읽고쓰기 대문에 문자를 쓰기에 적합하다.
 		 */
 
 		FileReader fr = null; 

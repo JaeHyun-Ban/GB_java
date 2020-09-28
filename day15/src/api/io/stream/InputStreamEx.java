@@ -10,9 +10,8 @@ public class InputStreamEx {
 	public static void main(String[] args) {
 
 		/*
-		 * 1. 파일을 읽어들이는데 사용하는 클래스 FileInputStream입니다. 2. 생성자에 매개값으로 읽어들일 파일의 전체경로를 적습니다.
-		 * 
-		 * 
+		 * 1. 파일을 '읽어들이는데 사용'하는 클래스 FileInputStream입니다. 
+		 * 2. 생성자에 매개값으로 읽어들일 파일의 전체경로를 적습니다.
 		 */
 		FileInputStream fis = null;
 		
