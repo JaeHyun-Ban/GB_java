@@ -22,9 +22,6 @@ public class BufferedReaderEx {
 //			BufferedReader bf = new BufferedReader(is);//버퍼리더는 'Reader in'을 매개변수로 받는다
 			
 			
-			
-			
-			
 			//경로로부터 파일 데이터를 읽어옴
 			bf = new BufferedReader(new FileReader("D:\\course\\java\\file\\test3.txt"));
 			
