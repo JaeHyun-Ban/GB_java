@@ -48,7 +48,7 @@ public class RamdaQuiz01 {
 				String price;
 				
 				//price는 애매한것들이 있다.
-				//따라서 넣기전에 이상한 값들을 처리해준다
+				//따라서 넣기전에 이상한 값들을 처리해준다, 중요중요 중요함
 				arr[4] = arr[4].replace(" ", "").replace(",", "").replace("-", "");
 				//>replace를 통해 여러가지 상황들을 모두 ""(없음) 처리해 준다.
 				
