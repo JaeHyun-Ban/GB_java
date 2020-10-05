@@ -15,6 +15,8 @@ public class RegexQuiz02 {
 		String str2 = "111111-2222222 GS25(마늘햄쌈) 5,500원";
 		String str3 = "222222-33333333 MINISTOP(제육볶음) 5,500";
 		
+		//배열로 생성하는 방법도 괜찮아 보이네
+		
 		//한번에 검사용
 		String total = str + str2 + str3;
 		
@@ -37,6 +39,7 @@ public class RegexQuiz02 {
 		String pattern4 = "\\d,\\d+원|\\d,\\d+";
 		Pattern p4 = Pattern.compile(pattern4);
 		Matcher m4 = p4.matcher(total);
+		
 		
 		//모든 조건을 만족시켯다면
 		while(m.find() && m2.find() && m3.find() && m4.find()) {
