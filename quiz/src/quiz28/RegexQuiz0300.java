@@ -37,9 +37,10 @@ public class RegexQuiz0300 {
 	public static void main(String[] args) {
 
 		/*
-		 * 1. day, store, grade, detail, price을 멤버로 갖는 Product클래스를 생성 2. Product클래스는
-		 * getter, setter를 생성한다 3. BufferedReader를 사용해서 건담.txt파일을 읽어들인다 4. 패턴별로 Product에
-		 * 저장한 후에 리스트에 추가
+		 * 1. day, store, grade, detail, price을 멤버로 갖는 Product클래스를 생성 
+		 * 2. Product클래스는 getter, setter를 생성한다
+		 * 3. BufferedReader를 사용해서 건담.txt파일을 읽어들인다 
+		 * 4. 패턴별로 Product에저장한 후에 리스트에 추가
 		 * 
 		 * 5. 외부 라이브러리를 사용해서 xlsx엑셀파일로 추출하기
 		 */
@@ -51,14 +52,14 @@ public class RegexQuiz0300 {
 			// 정규 표현 패턴
 			String pattern1 = "\\d{8}\\-\\d{2}-\\d{12,13}";
 			String pattern2 = "[가-힣]+ [가-힣]+";// 스토어 패턴
-			String pattern3 = "\\[[가-힣]+\\]";// 등급패턴
-			String pattern4 = "\\d+ *\\d+원";// 가격 패턴
-
-			bf = new BufferedReader(new InputStreamReader(new FileInputStream("D:\\course\\java\\건담.txt"), "utf-8"));
+			String pattern3 = "\\[[가-힣A-Z]+\\]";// 등급패턴
+//			String pattern4 = "\\d+ *\\d+원";// 가격 패턴
+			String pattern4 = "[0-9]+,[0-9]+원|[0-9]+원";// price
+			bf = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\Users\\Win10\\Desktop\\Backup\\java자료\\자료\\건담.txt"), "utf-8"));
 
 			String line;
 			while ((line = bf.readLine()) != null) {
-
+				
 				Matcher m1 = Pattern.compile(pattern1).matcher(line);
 				Matcher m2 = Pattern.compile(pattern2).matcher(line);
 				Matcher m3 = Pattern.compile(pattern3).matcher(line);
@@ -73,12 +74,13 @@ public class RegexQuiz0300 {
 					String price = m4.group();
 
 					Product00 p = new Product00(day, store, grade, detail, price);
-
+					System.out.println(p.toString());
 					list.add(p);
-
 				}
 
 			}
+			Stream<Product00> stream = list.stream();
+			stream.forEach(t -> System.out.println(t.toString()));
 			
 			//엑셀 생성 호출
 			excel(list);
@@ -98,13 +100,10 @@ public class RegexQuiz0300 {
 		XSSFSheet sheet = wb.createSheet("새로운 시트");
 		//행 생성
 		XSSFRow row = sheet.createRow(0);//제일 위의 줄 = 0번째
-		
 		//셀 생성
 		XSSFCell cell;
 		
 		//헤더 정보 구성
-		cell = row.createCell(0);
-		
 		cell = row.createCell(0);
 		cell.setCellValue("날짜");
 		cell = row.createCell(1);
@@ -135,12 +134,18 @@ public class RegexQuiz0300 {
 		
 		
 		try {
-			File file = new File("D:\\course\\java\\건담Excel.xlsx");
+			File file = new File("C:\\Users\\Win10\\Desktop\\Backup\\java자료\\자료\\건담Excel.xlsx");
 			FileOutputStream fos = new FileOutputStream(file);
 			wb.write(fos);
 			
 		} catch (Exception e) {
 			// TODO: handle exception
+		}finally {
+			try {
+				wb.close();
+			} catch (Exception e2) {
+				// TODO: handle exception
+			}
 		}
 		
 		
