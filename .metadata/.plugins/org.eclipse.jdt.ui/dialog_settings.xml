@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<item key="org.eclipse.jdt.ui.last.selected.jre.kind2" value="2"/>
 	<item key="org.eclipse.jdt.ui.last.selected.execution.enviroment" value="JavaSE-1.8"/>
+	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Users\Win10\Desktop\Backup\java자료\자료\poi-4.1.2\lib"/>
 	<section name="completion_proposal_size">
 	</section>
 	<section name="quick_assist_proposal_size">
@@ -144,5 +145,8 @@
 		</section>
 	</section>
 	<section name="BreadcrumbItemDropDown">
+	</section>
+	<section name="BuildPathsPropertyPage">
+		<item key="pageIndex" value="2"/>
 	</section>
 </section>

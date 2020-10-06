@@ -24,7 +24,7 @@ public class RamdaQuiz00 {
 		 * 새로운 리스트에 저장
 		 */
 		
-		//선생님
+		//강사님 풀이
 		
 		BufferedReader bfr = null;
 		
