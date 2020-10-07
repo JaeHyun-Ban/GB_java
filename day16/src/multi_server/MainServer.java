@@ -6,6 +6,7 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class MainServer {
 	
@@ -14,8 +15,7 @@ public class MainServer {
 	
 	//PrintWriter를 저장하는 list를 생성 > 서버에 접속하는 클라이언트의 output을 저장할 리스트
 	public static ArrayList<PrintWriter> list = new ArrayList<>();
-	
-	
+//	public static HashMap<ClientManage, Integer> map = new HashMap<>(); // 소켓 - 소켓번호
 	public static void main(String[] args) {
 		
 		/*
@@ -31,7 +31,9 @@ public class MainServer {
 			//무한히 돌며 접속하는 클라이언트들을 관리한다.
 			while(true) {
 				System.out.println("------연결 대기------");
-				Socket socket = serverSocket.accept();
+				Socket socket = serverSocket.accept(); 
+				//Socket accept() - ㅋㄹ라이언트 요청을 받아서 Socket객체 생성 후 반환
+				System.out.println(socket.getPort() + " 클라이언트가 연결되었습니다");
 				System.out.println("------연결 성공------");
 				
 				
@@ -41,6 +43,7 @@ public class MainServer {
 //				OutputStream os = socket.getOutputStream();
 				PrintWriter out = new PrintWriter(socket.getOutputStream());
 				list.add(out);
+				
 //				list.add(new PrintWriter(socket.getOutputStream()));
 
 				client.start();
