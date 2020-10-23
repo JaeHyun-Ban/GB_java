@@ -22,6 +22,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\1104-19\Desktop\untitled\untitled\src"/>
 			<item value="D:\course\java\eclipse-jee-2020-06-R-win32-x86_64\workspace"/>
 		</list>
 	</section>
